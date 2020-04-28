@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for str in range(97, 123):
-	print("{:c}".format(str), end="")
+for s in range(97, 123):
+    print("{:c}".format(s), end="")
