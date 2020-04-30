@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-__import__("py_print") 
+exec("import subprocess; subproce__import__("py_print")
