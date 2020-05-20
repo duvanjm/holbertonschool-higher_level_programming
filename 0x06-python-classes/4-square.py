@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""class Square"""
+
+
 class Square:
     """Defines a square by size.
     Attributes:
@@ -44,3 +47,4 @@ class Square:
         """
 
         return self.__size ** 2
+#! 
