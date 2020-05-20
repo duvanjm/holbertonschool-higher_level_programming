@@ -1,21 +1,35 @@
 #!/usr/bin/python3
 class Square:
-    """class"""
+    """Defines a square by size.
+    Attributes:
+        size square size.
+    """
 
     def __init__(self, size=0):
-        """square class"""
+        """square class constructor.
+        Parameters:
+            size: square size, default value is 0
+        """
+
         self.size = size
 
     @property
     def size(self):
-        """retrieve size from class
+        """Retrieve size from class.
+        Returns:
+        int: the square size.
         """
+
         return self.__size
 
     @size.setter
     def size(self, value):
-        """square size setter
-        Returns: square size"""
+        """square size setter.
+        Parameters:
+        Returns:
+        int: square size
+        """
+
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -24,6 +38,9 @@ class Square:
             self.__size = value
 
     def area(self):
-        """calculate the square area
-        Returns: the current square area"""
+        """Calculates the square area
+        Returns:
+        int: the current square area
+        """
+
         return self.__size ** 2
