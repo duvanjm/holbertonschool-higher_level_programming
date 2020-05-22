@@ -1,0 +1,17 @@
+The ``0-add_integer`` module
+===================================
+Using ``add_integer``
+-------------------------------------------------------import function_name from module_name
+>>> add_integer = __import__('0-add_integer').add_integer
+
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(5, 37)
+    42
+
+    >>> add_integer(10.7, -5)
+    5
+
+    >>> add_integer(-3, 6.8)
+    3
