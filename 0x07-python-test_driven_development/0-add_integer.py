@@ -9,4 +9,4 @@ def add_integer(a, b=98):
     b = int(b)
 
     sum = a + b
-    return sum   
+    return sum
