@@ -1,0 +1,14 @@
+The ``5-text_indentation`` module
+===================================
+Using ``text_indentation``
+-------------------------------------------------------import function_name from module_name
+
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("""This is a string without delims""")
+This is a string without delims
+<BLANKLINE>
+>>> text_indentation("""This is a string without delims""")
+This is a string without delims
+<BLANKLINE>
