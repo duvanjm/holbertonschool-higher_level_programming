@@ -8,7 +8,7 @@ class Student:
         """class student"""
         self.first_name = first_name
         self.laste_name = last_name
-        self. age = age
+        self.age = age
 
     def to_json(self):
         """ retrieves a dictionary representation of a Student instance"""
