@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""module"""
+"""module
+"""
 
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """class Rectanble based in class Base"""
+    """class Rectanble based in class Base
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Class constructor"""
+        """Class constructor
+        """
         self.width = width
         self.height = height
         self.x = x
@@ -17,27 +20,32 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """getter of the width"""
+        """getter of the width
+        """
         return self.__width
 
     @property
     def height(self):
-        """getter of the height"""
+        """getter of the height
+        """
         return self.__height
 
     @property
     def x(self):
-        """getter of the x"""
+        """getter of the x
+        """
         return self.__x
 
     @property
     def y(self):
-        """getter of the x"""
+        """getter of the x
+        """
         return self.__y
 
     @width.setter
     def width(self, value):
-        """setter of the width"""
+        """setter of the width
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -46,7 +54,8 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """setter of the height"""
+        """setter of the height
+        """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -55,7 +64,8 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """setter of the x"""
+        """setter of the x
+        """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -64,7 +74,8 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """setter of the y"""
+        """setter of the y
+        """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         elif value < 0:
@@ -72,22 +83,26 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """calculate the aerea of the rectangle"""
+        """calculate the aerea of the rectangle
+        """
         return self.__width * self.height
 
     def display(self):
-        """print a rectangle"""
+        """print a rectangle
+        """
         print("\n" * self.__y, end="")
         for height in range(self.__height):
             print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
-        """ """
+        """ uybino{pmok
+        """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"\
             .format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
-        """ """
+        """ ghkjkl
+        """
         if (args):
             if len(args) >= 1:
                 self.id = args[0]
@@ -113,7 +128,8 @@ class Rectangle(Base):
                     self.__y = v
 
     def dictionary(self):
-        """ """
+        """jkvhknl
+        """
         dict_ = {}
         for i in ["id", "width", "height", "x", "y"]:
             dict_.update({i: getattr(self, i)})
