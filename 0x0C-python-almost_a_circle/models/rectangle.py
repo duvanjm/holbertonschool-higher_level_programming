@@ -127,11 +127,12 @@ class Rectangle(Base):
                 if position == "y":
                     self.__y = v
 
-    def dictionary(self):
+    def to_dictionary(self):
         """define dictionary
         """
-        key = ["id", "width", "height", "x", "y"]
-        dict_ = {}
-        for idx in key:
-            dict.update({idx: getattr(self, idx)})
+        dict_ = {"id": self.id,
+                 "widht": self.__width,
+                 "height": self.__height,
+                 "x": self.__x,
+                 "y": self.__y}
         return dict_
