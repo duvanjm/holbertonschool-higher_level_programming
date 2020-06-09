@@ -20,6 +20,21 @@ class Rectangle(Base):
         """f """
         return self.__width
 
+    @property
+    def height(self):
+        """f """
+        return self.__height
+
+    @property
+    def x(self):
+        """f """
+        return self.__x
+
+    @property
+    def y(self):
+        """f"""
+        return self.__y
+
     @width.setter
     def width(self, value):
         """f """
@@ -28,11 +43,6 @@ class Rectangle(Base):
         elif value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-
-    @property
-    def height(self):
-        """f """
-        return self.__height
 
     @height.setter
     def height(self, value):
@@ -43,11 +53,6 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-    @property
-    def x(self):
-        """f """
-        return self.__x
-
     @x.setter
     def x(self, value):
         """f """
@@ -56,11 +61,6 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-
-    @property
-    def y(self):
-        """f"""
-        return self.__y
 
     @y.setter
     def y(self, value):
