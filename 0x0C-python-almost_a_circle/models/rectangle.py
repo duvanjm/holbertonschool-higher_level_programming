@@ -132,6 +132,6 @@ class Rectangle(Base):
         """
         key = ["id", "width", "height", "x", "y"]
         dict_ = {}
-        for idx in array:
+        for idx in key:
             dict.update({idx: getattr(self, idx)})
         return dict_
