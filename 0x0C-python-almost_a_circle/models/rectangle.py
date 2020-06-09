@@ -95,13 +95,13 @@ class Rectangle(Base):
             print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
-        """ uybino{pmok
+        """print a rectangle
         """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"\
             .format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
-        """ ghkjkl
+        """update the class
         """
         if (args):
             if len(args) >= 1:
@@ -128,9 +128,11 @@ class Rectangle(Base):
                     self.__y = v
 
     def dictionary(self):
-        """jkvhknl
+        """define dictionary
         """
-        dict_ = {}
-        for i in ["id", "width", "height", "x", "y"]:
-            dict_.update({i: getattr(self, i)})
+        dict_ = {"id": self.id,
+                 "widht": self.__width,
+                 "height": self.__height,
+                 "x": self.__x,
+                 "y": self.__y}
         return dict_
