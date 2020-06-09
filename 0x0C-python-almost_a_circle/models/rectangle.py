@@ -131,8 +131,8 @@ class Rectangle(Base):
         """define dictionary
         """
         dict_ = {"id": self.id,
-                 "widht": self.__width,
-                 "height": self.__height,
-                 "x": self.__x,
-                 "y": self.__y}
+                 "widht": self.width,
+                 "height": self.height,
+                 "x": self.x,
+                 "y": self.y}
         return dict_
