@@ -130,9 +130,8 @@ class Rectangle(Base):
     def dictionary(self):
         """define dictionary
         """
-        dict_ = {"id": self.id,
-                 "widht": self.__width,
-                 "height": self.__height,
-                 "x": self.__x,
-                 "y": self.__y}
+        key = ["id", "width", "height", "x", "y"]
+        dict_ = {}
+        for idx in array:
+            dict.update({idx: getattr(self, idx)})
         return dict_
