@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""lists all cities from the database hbtn_0e_4_usa
+"""show cities
 """
 
 import MySQLdb
@@ -14,10 +14,10 @@ if __name__ == "__main__":
     cur.execute("SELECT cities.name FROM cities INNER JOIN states\
                 ON cities.state_id = states.id \
                 WHERE states.name=%s ORDER BY cities.id ASC", (sys.argv[4],))
-    dataRow = cur.fetchall()
-    listData = []
-    for name in dataRow:
-        listData.append(name[0])
-    print(', '.join(listData))
+    row = cur.fetchall()
+    data = []
+    for cit in row:
+        data.append(cit[0])
+    print(', '.join(data))
     cur.close()
     conn.close()
