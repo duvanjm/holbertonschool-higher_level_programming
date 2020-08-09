@@ -19,5 +19,5 @@ if __name__ == "__main__":
     for name in dataRow:
         listData.append(name[0])
     print(', '.join(listData))
-    db.close()
     cur.close()
+    conn.close()
