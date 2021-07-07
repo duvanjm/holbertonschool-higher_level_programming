@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3                                                     
 """module"""
 
 import requests
@@ -11,7 +11,7 @@ if __name__ == '__main__':
         q = ""
     else:
         q = sys.argv[1]
-        r = requests.post(url, data={'q': q}).json()
+    r = requests.post(url, data={'q': q}).json()
     try:
         if r:
             idd = r['id']
