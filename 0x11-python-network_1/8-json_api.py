@@ -12,8 +12,8 @@ if __name__ == '__main__':
     else:
         q = sys.argv[1]
     r = requests.post(url, data={'q': q})
+    r = r.json()
     try:
-        r = r.json()
         if r:
             idd = r['id']
             name = r['name']
